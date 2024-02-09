@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="count.js"></script>
+    <title>Birthday Form</title>
+    <link rel="stylesheet" href="formindex.css"> 
+</head>
+<body>
+
+    <h2>Birthday Form</h2>
+
+    <form  action="count.html" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="birthday">Birth Date</label>
+        <input type="date" id="birthday" name="birthday" required>
+
+        <button type="submit" onclick="startCountDown()"><a href="count.html">Submit</button>
+    </form>
+
+</body>
+</html>

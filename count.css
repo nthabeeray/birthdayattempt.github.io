@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900');
+
+
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  background-image: url('black.jpg'); /* Replace 'your_image_path.jpg' with the path to your image file */
+  background-size: cover; /* Adjust according to your preference */
+  background-position: center; /* Adjust according to your preference */
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+.background1 {
+  background-image: url('balloons.jpg'); /* Replace with your image path */
+}
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 650px;
+  height: 480px;
+}
+/*balloon code*/
+.balloon {
+  position: absolute;
+  width: 30px;
+  height: 70px;
+  background-color: #ee43a1; /* Gold balloon color */
+  border-radius: 50%;
+  animation: floatBalloon 4s infinite ease-in-out;
+}
+
+@keyframes floatBalloon {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+/* end of balloon code*/
+h1 {
+  font-family: font;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: -3em;
+  font-size: 4em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgb(255, 255, 255);
+}
+
+#timer {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .9em;
+  margin-top: 0em;
+  letter-spacing: 5px;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  border-radius: 25px;
+}
+
+.days {
+  background: white;
+}
+
+.hours {
+  background: white;
+}
+
+.minutes {
+  background: white;
+}
+
+.seconds {
+  background:white;
+}
+
+.numbers {
+  font-family: big;
+  color: dark;
+  font-size: 4em;
+}
+
+.white {
+  position: absolute;
+  background: white;
+  height: 85px;
+  width: 75px;
+  left: 30%;
+  top: 2%;
+}
+
+.red {
+  position: absolute;
+  background: red;
+  left: 18%;
+  top: 9%;
+  height: 65px;
+  width: 70px;
+}
+
+.blue {
+  position: absolute;
+  background: blue;
+  height: 80px;
+  width: 80px;
+  left: 60%;
+  top: 5%;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: font;
+  font-size: 0.5em;
+  p {
+    letter-spacing: 3px;
+    color: rgb(250, 153, 27);
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: rgb(255, 51, 0);
+    }
+  }
+}
